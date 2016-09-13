@@ -1,0 +1,74 @@
+/*Banner start////////////*/
+
+	#banner {
+		/*min-height: 20rem;*/
+		height: 16rem;
+		background: url(../img/banner6.jpg) no-repeat;
+		/*background-size: cover;*/
+		/*background-size: 100%;*/
+		/*padding-top: 71.4%;*/
+		background-attachment: fixed;
+		position: relative;
+	}
+
+	#banner .banner-content {
+
+		text-align: center;
+		color: #fff;
+		position: absolute;
+		right: 8rem;
+		top: 5rem;
+	}
+
+	#banner .banner-content p {
+		/*margin: 2rem 0;*/
+	}
+
+	#banner .banner-content h1 {
+		letter-spacing: 2px;
+		font-family: 'Cinzel', serif;
+		font-size: 2.2rem;
+		font-weight: 600;
+		color: #eee;
+		margin-bottom: 2.3rem;
+		/*margin: 20px 0;*/
+	}
+
+	#banner .banner-content span {
+		letter-spacing: 2px;
+		font-family: 'Cinzel', serif;
+		font-size: 1.6rem;
+		font-weight: 200;
+		color: #fff;
+		/*color: #D0C8C8;*/
+		line-height: 2rem;
+		padding: 0.5rem;
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+
+	}
+
+/*Banner end//////////*/
+
+
+
+.test{
+	height: 100rem;
+	font-family: "AppleChancery";
+	font-family: 'Cinzel', serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Cinzel', serif;
+	font-family: 'Quicksand', sans-serif;
+	font-family: 'Overlock', cursive;
+	font-size: 38px;
+	/*background-color: #ccc;*/
+}
+
+
+
+
+
+
+
+

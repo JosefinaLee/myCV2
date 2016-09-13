@@ -1,0 +1,54 @@
+html{
+	font-size: 20px;
+
+}
+html, body{
+	height: 100%;
+}
+body{
+	font-family: "AppleChancery";
+
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.wrapper{
+	width: 50rem;
+	margin: 0 auto;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+
+
+
+}
+
+/*/////////////////////////*/
+
+
+@media only screen and (max-width:1024px) {
+
+
+
+}
+
+
+
+
+
+
