@@ -15,6 +15,17 @@
     font-family: 'AppleChancery';
     src: url(../font/AppleChancery.ttf);
 }
+@font-face {
+    font-family: 'RalewayBlack';
+    src: url(../font/RalewayBlack.ttf);
+}
+@font-face {
+    font-family: 'RalewayHeavy';
+    src: url(../font/RalewayHeavy.ttf);
+}
+
+
+
 
 .iconfont{
     font-family:"iconfont" !important;

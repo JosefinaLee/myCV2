@@ -43,8 +43,8 @@
 		/*color: #D0C8C8;*/
 		line-height: 2rem;
 		padding: 0.5rem;
-		border-top: 2px solid #fff;
-		border-bottom: 2px solid #fff;
+		border-top: 2px solid #FFF;
+		border-bottom: 2px solid #FFF;
 
 	}
 
@@ -61,6 +61,8 @@
 	font-family: 'Cinzel', serif;
 	font-family: 'Quicksand', sans-serif;
 	font-family: 'Overlock', cursive;
+	font-family: 'Raleway-Black';
+
 	font-size: 38px;
 	/*background-color: #ccc;*/
 }

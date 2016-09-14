@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/nav.css">
     <!--- fonts --->
-    <link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,900,800,700,600,500,300,100' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--    <link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+<!--    <link href='http://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
+<!--    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,900,800,700,600,500,300,100' rel='stylesheet' type='text/css'>-->
+<!--    <link href='//fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>-->
+<!--    <link href='//fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>-->
+<!--    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
     <!--- fonts --->
     <!-- icon -->
 
@@ -52,11 +52,13 @@
 <?php include "nav.php"?>
 <!-- Nav end -->
 
-
+<!-- Work start -->
+<?php include "work.php"?>
+<!-- Work end -->
 
 
 <div class="test">
-<!--    I'm Christopher Doe-->
+    I'm JOSEFINA Christopher Doe
 </div>
 
 
