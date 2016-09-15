@@ -4,7 +4,7 @@ class Cv extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('cv');
+		$this->load->view('index');
 	}
 }
 

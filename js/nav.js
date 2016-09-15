@@ -6,7 +6,9 @@ define(["jquery"], function($){
 
         // nav固定
         $(window).scroll(function(){
-
+            //console.log($('#nav').offset().top);
+            //console.log($(window).scrollTop());
+            //if($(window).scrollTop() >= $('#nav').offset().top){
             if($(window).scrollTop() >= $('#banner').height()){
                 $nav.css({
                     "position":  "fixed",
@@ -27,7 +29,7 @@ define(["jquery"], function($){
 
          //nav-menu onclick event
         $("#nav-menu").on("click", function(e){
-            console.log("111");
+            //console.log("111e");
             $("ul", $nav).toggle('1.5s', 'swing');
             e.preventDefault();
             return false;

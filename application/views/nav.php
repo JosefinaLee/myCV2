@@ -1,6 +1,6 @@
 <!-- Nav start -->
-
-<div id="nav" class="">
+<div height="4rem" position="relative">
+<div id="nav" class="clearfix">
     <div class="nav-wrapper">
         <!--        <span class="logo">-->
         <!--            Josefina-->
@@ -34,5 +34,6 @@
 
 
     </div>
+</div>
 </div>
 <!-- Nav end -->

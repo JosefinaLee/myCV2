@@ -159,6 +159,8 @@
     background: #fff;
     /*background: rgba(0, 0, 0, 0.05);*/
     box-shadow: 0 0 5px #999;
+    position: relative;
+    z-index: 10;
     /*background: url(../img/nav5.jpg) no-repeat;*/
     /*background-size: 100%;*/
     /*color: #fff;*/
