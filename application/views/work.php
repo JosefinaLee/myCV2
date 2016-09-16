@@ -1,4 +1,4 @@
-<div id="work" >
+<div id="work" class="clearfix">
     <div class="title">
         <h3>My Work</h3>
     </div>
@@ -14,43 +14,31 @@
 <!--            <li><a href="">Trending</a></li>-->
         </ul>
     </div>
-    <div class="work-wrapper">
 
+    <div class="work-container">
 
-    <div class="works">
-        <div class="work-content" data-title="title1">
-            <img src="upload/work/g1.jpg" alt="">
-            <div class="work-mask">
-                <p class="work-title">fhvgh</p>
+<?php
+foreach($blogs as $blog) {
+?>
+
+    <div class="works-wrapper">
+
+        <!--    <p class="work-info">chg</p>-->
+        <div class="works">
+            <div class="work-content" data-title="title1">
+                <img src="<?php echo $blog->blog_img;?>" alt="">
+
+                <div class="work-mask">
+                    <p class="work-info"><?php echo $blog->blog_title;?>This is the title</p>
+                </div>
             </div>
+
         </div>
-        <p class="work-info">chg</p>
+
     </div>
-
-
-
-
-    <div class="works">
-        <div class="work-content" data-title="title1">
-            <img src="upload/work/g2.jpg" alt="">
-            <div class="work-mask">
-                <p class="work-title">fhvgh</p>
-            </div>
-        </div>
-        <p class="work-info">chg</p>
-    </div>
-
-
-
-    <div class="works">
-        <div class="work-content" data-title="title1">
-            <img src="upload/work/g3.jpg" alt="">
-            <div class="work-mask">
-                <p class="work-title">fhvgh</p>
-            </div>
-        </div>
-        <p class="work-info">chg</p>
-    </div>
+<?php
+}
+?>
 
 
 

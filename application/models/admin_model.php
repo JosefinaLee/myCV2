@@ -14,6 +14,13 @@ class Admin_model extends CI_Model {
 		return $this -> db -> get_where("t_admin", array(
 				"id" => id
 		)) -> result;
+
+
+
+
+		$query=$this->db->get_where("product", array("product_id" => $data));
+
+		return $query->row();
 	}
 }
 
