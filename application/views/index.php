@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/contact.css">
     <!--- fonts --->
 <!--    <link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
 <!--    <link href='http://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
@@ -45,18 +46,13 @@
     });
 </script>
 
-<!-- Banner start -->
 <?php include "banner.php"?>
-<!-- Banner end -->
 
-<!-- Nav start -->
 <?php include "nav.php"?>
-<!-- Nav end -->
 
-<!-- Work start -->
 <?php include "work.php"?>
-<!-- Work end -->
 
+<?php include "contact.php"?>
 
 <div class="test">
 <!--    I'm JOSEFINA Christopher Doe-->

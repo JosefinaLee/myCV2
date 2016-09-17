@@ -16,12 +16,12 @@ define(["jquery"], function($){
                     "box-shadow": "0 0 5px #999"
                     //,
                     //"background": "rgba(0, 0, 0, 0.05)"
-
-
-            });
+                });
+                $("#nav-placeholder").css("display", "block");
 
             }else{
                 $nav.attr("style", "position: relative");
+                $("#nav-placeholder").css("display", "none");
             }
 
         });

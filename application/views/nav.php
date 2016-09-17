@@ -1,5 +1,6 @@
 <!-- Nav start -->
-<div height="4rem" position="relative">
+<div id="nav-placeholder" style="height: 4rem; display: none;">
+</div>
 <div id="nav" class="clearfix">
     <div class="nav-wrapper">
         <!--        <span class="logo">-->
@@ -8,16 +9,16 @@
 
 
         <div class="search">
-            <i class="iconfont">&#xe604;</i>
+            <i class="iconfont">&#xe60f;</i>
         </div>
 
 
 <!--        <a href="" class="menu">-->
         <a class="menu" id="nav-menu">
-            <i class="iconfont">&#xe603;</i>
+            <i class="iconfont">&#xe60e;</i>
         </a>
         <a class="menu" id="nav-close">
-            <i class="iconfont">&#xe652;</i>
+            <i class="iconfont">&#xe613;</i>
         </a>
 <!--        </a>-->
 <!--        <a href="#test1" class="menu"><div class="menu-content"></div></a>-->
@@ -34,6 +35,5 @@
 
 
     </div>
-</div>
 </div>
 <!-- Nav end -->

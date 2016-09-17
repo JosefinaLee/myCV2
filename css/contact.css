@@ -1,0 +1,14 @@
+#contact{
+    background: url(../img/contact.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    margin: 2rem 0;
+    height: 34rem;
+
+}
+
+#contact h3{
+    color: #fff;
+}
+/*#contact .contact-content{*/
+    /*position: absolute;*/
+/*}*/
