@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/work.css">
     <!--- fonts --->
 <!--    <link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
 <!--    <link href='http://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
@@ -35,7 +36,7 @@
 
 </head>
 <body>
-<script src="js/jquery-1.9.1.min.js"></script>
+<!--<script src="js/jquery-1.9.1.min.js"></script>-->
 <script>
 
     jQuery(document).ready(function($) {
@@ -50,9 +51,10 @@
 
 <?php include "nav.php"?>
 
-<?php include "work.php"?>
+<?php include "blog.php"?>
 
 <?php include "contact.php"?>
+<?php include "work.php"?>
 
 <div class="test">
 <!--    I'm JOSEFINA Christopher Doe-->

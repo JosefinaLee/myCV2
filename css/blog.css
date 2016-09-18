@@ -1,9 +1,9 @@
-#work .catalog{
+#blog .catalog{
     position: relative;
     height: 3.3rem;
     margin-bottom: 1rem;
 }
-#work .catalog ul{
+#blog .catalog ul{
     /*width: 100%;*/
     /*display: inline-block;*/
     display: -webkit-box;
@@ -14,7 +14,7 @@
 
 
 }
-#work .catalog li{
+#blog .catalog li{
     font-size: 0.9rem;
     line-height: 1.2rem;
     font-family: 'Cinzel', serif;
@@ -22,74 +22,74 @@
     font-weight: 300;
     /*float: left;*/
 }
-#work .catalog li:hover{
+#blog .catalog li:hover{
     border-bottom: 2px solid orange;
     color: orange;
 }
 
-#work .catalog .current{
+#blog .catalog .current{
     border-bottom: 2px solid orange;
     color: orange;
 }
-#work .works{
+#blog .blogs{
     /*float: left;*/
 }
-#work .work-container{
+#blog .blog-container{
     /*display: -webkit-box;*/
     /*-webkit-box-pack: justify;*/
 }
 
 @media (min-width: 1200px) {
-    #work .work-container {
+    #blog .blog-container {
         width: 57rem;
         margin: 0 auto;
     }
-    #work .works {
+    #blog .blogs {
         /*box-sizing: border-box;*/
         width: 29.3%;
         margin: 2%;
     }
-    #work img {
+    #blog img {
         /*width: 17.5rem;*/
         /*height: 12rem;*/
         width: 100%;
     }
 
-    }
+}
 @media (max-width: 1200px) {
-    #work .work-container{
+    #blog .blog-container{
         width: 100%;
     }
-    #work .works {
+    #blog .blogs {
         /*box-sizing: border-box;*/
         width: 29.3%;
         margin: 2%;
     }
-    #work img {
+    #blog img {
         /*width: 14.5rem;*/
         /*height: 10rem;*/
         width: 100%;
     }
 }
 @media (max-width: 768px) {
-    #work .works {
+    #blog .blogs {
         width: 46%;
     }
 }
 @media (max-width: 480px) {
-    #work .works {
+    #blog .blogs {
         width: 80%;
         margin: 10%;
     }
 }
-#work .works {
+#blog .blogs {
     position: relative;
     float: left;
     height: 100%;
     overflow: hidden;
 }
 
-#work .work-mask{
+#blog .blog-mask{
     width: 100%;
     height: 100%;
     background-color: rgba(255, 193, 79, 0.82);
@@ -98,20 +98,20 @@
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
 }
-#work .work-content:hover .work-mask{
+#blog .blog-content:hover .blog-mask{
     /*left: 0;*/
     transform: translateX(0);
 
 }
-/*#work .works-wrapper{*/
-    /*position: relative;*/
+/*#blog .blogs-wrapper{*/
+/*position: relative;*/
 /*}*/
 
-#work .work-mask{
+#blog .blog-mask{
     padding: 1rem;
     box-sizing: border-box;
 }
-#work .work-info{
+#blog .blog-info{
     color: #ffffff;
     font-size: 1.4rem;
     /*margin: 1rem;*/

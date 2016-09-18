@@ -9,11 +9,13 @@ class Blog_model extends CI_Model {
 
 	}
 
+    public function get_blog_by_cate_id($cate_id){
+        return $this -> db -> get_where("t_blog", array(
+            "cate_id" => $cate_id
+        )) -> result();
+    }
 
-	public function get_by_id(){
-		return $this -> db -> get_where("t_admin", array(
-				"id" => id
-		)) -> result;
-	}
+
+
 }
 

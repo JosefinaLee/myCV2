@@ -5,9 +5,21 @@
     <div class="catalog">
         <ul class="clearfix">
             <li class="current">All</li>
-            <li>Elements</li>
-            <li>Templates</li>
-            <li>Trending</li>
+<?php foreach($categories as $category){
+?>
+    <li data-id="<?php echo $category->cate_id?>"><?php echo $category->cate_name?></li>
+
+<?php
+}
+?>
+
+<!--            <a href="javascript:;">All</a>-->
+<!--            阻止<a></a>默认行为-->
+
+
+<!--            <li>Elements</li>-->
+<!--            <li>Templates</li>-->
+<!--            <li>Trending</li>-->
 <!--            <li><a href="">All</a></li>-->
 <!--            <li><a href="">Elements</a></li>-->
 <!--            <li><a href="">Templates</a></li>-->
@@ -16,12 +28,12 @@
     </div>
 
     <div class="work-container">
-
+<ul class="blog-list">
 <?php
 foreach($blogs as $blog) {
 ?>
-
-    <div class="works-wrapper">
+<li>
+<!--    <div class="works-wrapper">-->
 
         <!--    <p class="work-info">chg</p>-->
         <div class="works">
@@ -35,7 +47,9 @@ foreach($blogs as $blog) {
 
         </div>
 
-    </div>
+<!--    </div>-->
+
+</li>
 <?php
 }
 ?>
@@ -43,7 +57,7 @@ foreach($blogs as $blog) {
 
 
 
-
+</ul>
     </div>
 <!--sdtvntlkslrfnuvtnt-->
 
