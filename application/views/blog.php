@@ -30,7 +30,7 @@
                     <a href="cv/view_blog?blogId=<?php echo $blog->blog_id?>">
                         <div class="blogs">
                             <div class="blog-content" data-title="title1">
-                                <img src="<?php echo $blog->blog_img;?>" alt="">
+                                <img src="<?php echo $blog->blog_thumb;?>" alt="">
                                 <div class="blog-mask">
                                     <p class="blog-info"><?php echo $blog->blog_title;?>This is the title</p>
                                 </div>

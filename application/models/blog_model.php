@@ -15,6 +15,23 @@ class Blog_model extends CI_Model {
         )) -> result();
     }
 
+    public function get_blog_by_id($blog_id){
+        $this -> db -> select("blog.*, cate.cate_name");
+        $this -> db -> from("t_blog blog");
+        $this -> db -> join("t_blog_category cate", "blog.cate_id = cate.cate_id");
+        $this -> db -> where("blog.blog_id", $blog_id);
+        return $this -> db -> get() -> row();
+
+    }
+
+    public function get_comment_by_id($blog_id){
+        $this -> db -> order_by("comment_time", "desc");
+        return $this -> db ->get_where("t_comment", array(
+            "blog_id" => $blog_id
+        )) -> result();
+    }
+
+
 
 
 }

@@ -38,7 +38,7 @@ foreach($blogs as $blog) {
         <!--    <p class="work-info">chg</p>-->
         <div class="works">
             <div class="work-content" data-title="title1">
-                <img src="<?php echo $blog->blog_img;?>" alt="">
+                <img src="<?php echo $blog->blog_thumb;?>" alt="">
 
                 <div class="work-mask">
                     <p class="work-info"><?php echo $blog->blog_title;?>This is the title</p>

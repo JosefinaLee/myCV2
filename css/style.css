@@ -32,6 +32,9 @@ a{
 ul{
 	list-style: none;
 }
+img{
+	border: none;
+}
 @media (min-width: 1024px) {
 	.wrapper {
 		width: 50rem;
@@ -69,21 +72,23 @@ ul{
 }
 
 
-@media only screen and (min-width: 1024px) {
+.test{
+	height: 100rem;
+	font-family: "AppleChancery";
+	font-family: 'Cinzel', serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Cinzel', serif;
+	font-family: 'Quicksand', sans-serif;
+	font-family: 'Overlock', cursive;
+	font-family: 'Raleway-Black';
 
-
-
-
+	font-size: 38px;
+	/*background-color: #ccc;*/
 }
 
-/*/////////////////////////*/
 
 
-@media only screen and (max-width:1024px) {
-
-
-
-}
 
 
 

@@ -39,7 +39,10 @@
 */
 
 $route['default_controller'] = "cv";
+//$route['admin'] = "admin/index";
+//Router config
 $route['404_override'] = '';
+
 
 
 /* End of file routes.php */
