@@ -15,7 +15,7 @@ define(["jquery"], function($){
                     var blog = data[i];
                     html += `
                         <li>
-                            <a href="cv/view_blog?blogId=`+ blog.blog_id + `">
+                            <a href="blog_detail/view_blog?blogId=`+ blog.blog_id + `">
                                 <div class="blogs">
                                     <div class="blog-content" data-title="title1">
                                         <img src="`+ blog.blog_thumb +`" alt="">

@@ -8,7 +8,7 @@ require(["jquery", "nav"], function($){
                 $blogId = $('#blog-id'),
                 $commentCount = $(".blog-commented span");
 
-            $.post("cv/add_comment", {
+            $.post("blog_detail/add_comment", {
 
                 username: $username.val(),
                 email: $email.val(),

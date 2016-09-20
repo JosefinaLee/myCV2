@@ -50,7 +50,7 @@
             ?>
         </ul>
     </div>
-
+<!--    <input type="hidden" id="cate_id">-->
     <div class="blog-list-wrapper clearfix">
         <ul class="blog-list-all">
 
@@ -60,11 +60,11 @@
                     <div id="blog-list-container">
                         <img src="<?php echo $blog->blog_thumb;?>" alt="">
                         <div id="blog-list-info">
-                            <a href="" class="blog-cate"><?php echo $blog->cate_name;?></a>
+                            <a href="javascript:;" data-id="<?php echo $blog->cate_id;?>" class="blog-cate"><?php echo $blog->cate_name;?></a>
                             <p class="blog-list-title"><h4><?php echo $blog->blog_title;?></h4></p>
                             <p class="blog-list-describe line"><?php echo $blog->blog_date;?>March 01, 2015 with 1 Commnets</p>
                             <p class="blog-list-abstract"><?php echo $blog->blog_content;?></p>
-                            <a class="blog-list-readmore">READ MORE</a>
+                            <a href="blog_detail/view_blog?blogId=<?php echo $blog->blog_id?>" class="blog-list-readmore">READ MORE</a>
 
                         </div>
                     </div>

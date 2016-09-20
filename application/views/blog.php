@@ -21,7 +21,7 @@
 
     <div class="blog-container">
         <div class="blog-all">
-            <a href="cv/get_blog_list">View all blogs</a>
+            <a href="blog_list/get_blog_list">View all blogs</a>
         </div>
 
         <ul class="blog-list clearfix">
@@ -31,7 +31,7 @@
                 <li>
                     <!--    <div class="blogs-wrapper">-->
                     <!--    <p class="blog-info">chg</p>-->
-                    <a href="cv/view_blog?blogId=<?php echo $blog->blog_id?>">
+                    <a href="blog_detail/view_blog?blogId=<?php echo $blog->blog_id?>">
                         <div class="blogs">
                             <div class="blog-content" data-title="title1">
                                 <img src="<?php echo $blog->blog_thumb;?>" alt="">
