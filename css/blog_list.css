@@ -1,0 +1,162 @@
+#blog-list{
+    margin-bottom: 4rem;
+}
+#blog-list .blog-list-wrapper{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2%;
+    /*background-color: #F0F3F6;*/
+    /*background-color: #EDF4F5;*/
+    /*background-color: #F7FAFF;*/
+    /*background-color: #F1F6FF;*/
+}
+
+#blog-list-container{
+    display: flex;
+    align-items: center;
+}
+
+#blog-list-container img{
+    width: 40%;
+}
+#blog-list-info{
+    width: 60%;
+    position: relative;
+    padding: 5%;
+
+}
+
+#blog-list-info{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+#blog-list-info p{
+    margin-bottom: 1rem;
+}
+#blog-list-info h4{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#blog-list-info .blog-list-describe{
+    color: #4d4d4d;
+    font-size: 0.7rem;
+    font: 0.7rem/1.2rem Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+#blog-list-info .blog-cate{
+    background: #FFBD43;
+    padding: 0.4rem 1.4rem;
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 0.65rem;
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+}
+
+#blog-list-info .blog-list-abstract{
+    /*padding-bottom: 1rem;*/
+    height: 4rem;
+    overflow: hidden;
+}
+#blog-list-info .blog-list-readmore{
+    text-transform: uppercase;
+    color: #4D4D4D;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#blog-list-container{
+    /*width: 29%;*/
+    /*margin: 2%;*/
+    background-color: #F7FAFF;
+}
+@media (max-width: 1024px) and (min-width: 768px ){
+    html{
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 768px) and (min-width: 480px ){
+    html{
+        font-size: 18px;
+    }
+    #blog-list .blog-list-all li{
+        width: 94%;
+        margin: 3%;
+    }
+    #blog-list-container{
+        display: flex;
+        align-items: center;
+    }
+
+    #blog-list-container img{
+        width: 40%;
+    }
+    #blog-list-info{
+        width: 60%;
+        position: relative;
+        padding: 5%;
+
+    }
+    #blog-list-info .blog-list-abstract{
+        /*display: none;*/
+    }
+    #blog-list-info .blog-list-readmore{
+        display: none;
+    }
+}
+@media (max-width: 480px){
+    html{
+        font-size: 16px;
+    }
+    #blog-list-info .blog-list-abstract{
+        display: none;
+    }
+    #blog-list-info .blog-list-readmore{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    #blog-list .blog-list-all li{
+        float: left;
+        width: 46%;
+        margin: 2%;
+    }
+    #blog-list-info .blog-cate{
+        top: 1.5rem;
+        left: -2rem;
+    }
+    #blog-list-container{
+        position: relative;
+    }
+    #blog-list-info {
+        position: static;
+    }
+}
+
+#blog-list-load{
+    text-align: center;
+}
+#blog-list-load-btn{
+    border: 0;
+    width: 200px;
+    height: 30px;
+    font-family: "ESPRB";
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}

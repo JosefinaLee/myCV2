@@ -1,0 +1,15 @@
+#footer{
+    background: #364356;
+}
+#footer .scatter{
+    height: 1.3rem;
+    background: url("../img/footer.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#footer p{
+    font-size: 0.7rem;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}

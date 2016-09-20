@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页INDEX</title>
+    <title><?php echo $blog_info -> blog_title;?></title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <base href="<?php echo site_url();?>">
@@ -36,29 +36,12 @@
                 <li class="blog-category"><i class="iconfont">&#xe629;</i><?php echo $blog_info -> cate_name;?></li>
                 <li class="blog-clicked"><i class="iconfont">&#xe60d;</i><?php echo $blog_info -> blog_clicked;?></li>
                 <li class="blog-liked"><i class="iconfont">&#xe62e;</i><?php echo $blog_info -> blog_liked;?></li>
-                <li class="blog-commented"><i class="iconfont">&#xe62d;</i><?php echo $blog_info -> blog_commented;?></li>
+                <li class="blog-commented"><i class="iconfont">&#xe62d;</i><span><?php echo count($blog_info -> comments)?></span></li>
             </ul>
             <img src="<?php echo $blog_info -> blog_img;?>" alt="">
             <p class="blog-article">内容: <?php echo $blog_info -> blog_content;?></p>
         </div>
-        <div id="blog-comments">
-            <h3 class="blog-commented"><span><?php echo count($blog_info -> comments)?></span> Responses</h3>
-            <ul class="comment-list ">
 
-                <?php foreach($blog_info -> comments as $comment){
-                    ?>
-
-                <li class="comment">
-                    <ul class="comment-info clearfix">
-                        <li class="comment-user"><i class="iconfont ">&#xe60a;</i><?php echo $comment -> comment_name;?></li>
-                        <li class="comment-date"><i class="iconfont ">&#xe630;</i><?php echo $comment -> comment_time;?></li>
-                    </ul>
-                    <p class="comment-content"><?php echo $comment -> comment_content;?></p>
-                </li>
-
-                <?php  }?>
-            </ul>
-        </div>
         <div id="comment-form">
             <h3>leave a comment</h3>
 
@@ -73,6 +56,26 @@
 
 <!--            <p><a href="" class="send-comment">SEND</a></p>-->
         </div>
+
+        <div id="blog-comments">
+            <h3 class="blog-commented"><span><?php echo count($blog_info -> comments)?></span> Responses</h3>
+            <ul class="comment-list ">
+
+                <?php foreach($blog_info -> comments as $comment){
+                    ?>
+
+                    <li class="comment">
+                        <ul class="comment-info clearfix">
+                            <li class="comment-user"><i class="iconfont ">&#xe60a;</i><?php echo $comment -> comment_name;?></li>
+                            <li class="comment-date"><i class="iconfont ">&#xe630;</i><?php echo $comment -> comment_time;?></li>
+                        </ul>
+                        <p class="comment-content"><?php echo $comment -> comment_content;?></p>
+                    </li>
+
+                <?php  }?>
+            </ul>
+        </div>
+
     </div>
 </div>
 

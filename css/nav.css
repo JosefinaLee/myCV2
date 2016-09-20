@@ -1,3 +1,4 @@
+
 @media (min-width: 1024px){
     #nav .nav-wrapper{
         width: 50rem;
@@ -157,6 +158,8 @@
     height: 2rem;
     padding: 1rem 0;
     background: #fff;
+    background-color: #F7FAFF;
+
     /*background: rgba(0, 0, 0, 0.05);*/
     box-shadow: 0 0 5px #999;
     position: relative;

@@ -9,7 +9,7 @@ class Cv extends CI_Controller {
 	}
 	public function index()
 	{
-		$blog = $this -> blog_model -> get_blog_all();
+		$blog = $this -> blog_model -> get_blog_six();
 		$category = $this -> blog_category_model -> get_categories();
 //		$blog -> category = $this -> blog_category_model -> get_categories();
 //		var_dump($blog-> category);
@@ -27,9 +27,9 @@ class Cv extends CI_Controller {
 //		var_dump($cate_id);
 //		die();
 		if(!$cate_id){
-			$blogs = $this -> blog_model -> get_blog_all();
+			$blogs = $this -> blog_model -> get_blog_six();
 		}else{
-			$blogs = $this -> blog_model -> get_blog_by_cate_id($cate_id);
+			$blogs = $this -> blog_model -> get_blog_by_cate_id_six($cate_id);
 		}
 		echo json_encode($blogs);
 	}
@@ -60,13 +60,31 @@ class Cv extends CI_Controller {
 		}else{
 			echo "fail";
 		}
-
-
-
-
-
 	}
 
+
+	public function get_blog_list(){
+		$category = $this -> blog_category_model -> get_categories();
+		$blogs = $this->blog_model->get_blog_six();
+		$data = array(
+			"categories" => $category,
+			"blogs" => $blogs
+		);
+		$this -> load -> view("blog_list", $data);
+	}
+
+	public function view_blog_list(){
+		$cate_id = $this -> input ->get("cateId");
+		if(!$cate_id) {
+			$blogs = $this->blog_model->get_blog_six();
+		}else{
+			$blogs = $this->blog_model-> get_blog_by_cate_id_six($cate_id);
+		}
+		echo json_encode($blogs);
+//		$data = array(
+//			"blogs" => $blogs
+//		);
+	}
 
 
 }

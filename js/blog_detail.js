@@ -30,7 +30,10 @@ require(["jquery", "nav"], function($){
                     `;
                     $(".comment-list").prepend(html);
                     $commentCount.text(parseInt($commentCount.text())+1);
-
+                    //$("li.blog-commented").text(parseInt($("li.blog-commented").text())+1);
+                    //console.log(parseInt($("li.blog-commented").text()));
+                    //console.log($("li.blog-commented").text());
+                    $(".text").val("");
 
                     alert("success!!");
                 }else{

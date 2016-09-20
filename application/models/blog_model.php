@@ -2,17 +2,33 @@
 
 class Blog_model extends CI_Model {
 
-	public function get_blog_all()
+	public function get_blog_six()
 	{
+        $this -> db -> select("blog.*, cate.cate_name");
+        $this -> db -> from("t_blog blog");
+        $this -> db -> join("t_blog_category cate", "blog.cate_id = cate.cate_id");
+        $this -> db -> order_by("blog_id", "asc");
+        $this -> db ->limit(6);
+        return $this->db->get()->result();
 
-        return $this->db->get("t_blog")->result();
+//        $this->db->limit(6);
+//        return $this->db->get("t_blog")->result();
 
 	}
 
-    public function get_blog_by_cate_id($cate_id){
-        return $this -> db -> get_where("t_blog", array(
-            "cate_id" => $cate_id
-        )) -> result();
+    public function get_blog_by_cate_id_six($cate_id){
+        $this -> db -> select("blog.*, cate.cate_name");
+        $this -> db -> from("t_blog blog");
+        $this -> db -> join("t_blog_category cate", "blog.cate_id = cate.cate_id");
+        $this -> db -> where("cate.cate_id", $cate_id);
+        $this -> db -> order_by("blog_id", "asc");
+        $this -> db ->limit(6);
+        return $this -> db -> get() -> result();
+
+//        $this->db->limit(6);
+//        return $this -> db -> get_where("t_blog", array(
+//            "cate_id" => $cate_id
+//        )) -> result();
     }
 
     public function get_blog_by_id($blog_id){
@@ -31,6 +47,18 @@ class Blog_model extends CI_Model {
         )) -> result();
     }
 
+    public function get_blog_all()
+    {
+
+        return $this->db->get("t_blog")->result();
+
+    }
+
+    public function get_blog_by_cate_id($cate_id){
+        return $this -> db -> get_where("t_blog", array(
+            "cate_id" => $cate_id
+        )) -> result();
+    }
 
 
 

@@ -20,7 +20,11 @@
     </div>
 
     <div class="blog-container">
-        <ul class="blog-list">
+        <div class="blog-all">
+            <a href="cv/get_blog_list">View all blogs</a>
+        </div>
+
+        <ul class="blog-list clearfix">
             <?php
             foreach($blogs as $blog) {
                 ?>
@@ -32,7 +36,11 @@
                             <div class="blog-content" data-title="title1">
                                 <img src="<?php echo $blog->blog_thumb;?>" alt="">
                                 <div class="blog-mask">
-                                    <p class="blog-info"><?php echo $blog->blog_title;?>This is the title</p>
+                                    <div class="blog-mask-info">
+<!--                                        <p><i class="iconfont">&#xe60f;</i></p>-->
+                                        <p class="blog-info"><?php echo $blog->blog_title;?>This is the title</p>
+                                        <p><?php echo $blog->cate_name;?></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

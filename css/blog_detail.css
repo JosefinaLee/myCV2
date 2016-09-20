@@ -35,6 +35,8 @@
 }
 #blog-comments{
     margin: 3% 7% ;
+    border-top: 1px dashed rgba(256, 165, 0, 0.61);
+    padding-top: 1rem;
 
 }
 #blog-comments h3, #comment-form h3{
