@@ -75,7 +75,7 @@ require(["jquery", "nav"], function($){
 
         });
 
-        $("#blog-list-info").on("click", $(".blog-cate"), function(e){
+        $(".blog-list-wrapper").on("click", $(".blog-cate"), function(e){
             var cateId = $(e.target).data("id");
             console.log(cateId);
             Category_switch(cateId);
