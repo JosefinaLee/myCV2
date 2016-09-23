@@ -9,11 +9,13 @@ class Blog_list extends CI_Controller {
 	}
 
 	public function get_blog_list(){
+        $cate = $this -> input ->get("cate_id");
 		$category = $this -> blog_category_model -> get_categories();
-		$blogs = $this->blog_model->get_blog_six();
+        $blogs = $cate?$this->blog_model->get_blog_by_cate_id_six($cate):$this->blog_model->get_blog_six();
 		$data = array(
 			"categories" => $category,
-			"blogs" => $blogs
+			"blogs" => $blogs,
+            "cate" => $cate
 		);
 		$this -> load -> view("blog_list", $data);
 	}

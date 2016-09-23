@@ -22,7 +22,9 @@ require(["jquery", "nav"], function($){
                     <div id="blog-list-container">
                         <img src=`+ blog.blog_thumb +` alt="">
                         <div id="blog-list-info">
-                            <a href="javascript:;" data-id="` + blog.cate_id + `"  class="blog-cate">`+ blog.cate_name +`</a>
+                            <a href="blog_list/get_blog_list?cate_id=` + blog.cate_id + `" class="blog-cate">`+ blog.cate_name +`</a>
+
+                            <!--<a href="javascript:;" data-id="` + blog.cate_id + `"  class="blog-cate">`+ blog.cate_name +`</a>-->
                             <p class="blog-list-title"><h4>`+ blog.blog_title +`</h4></p>
                             <p class="blog-list-describe line">`+ blog.blog_date +`March 01, 2015 with 1 Commnets</p>
                             <p class="blog-list-abstract">`+ blog.blog_content +`</p>
@@ -39,7 +41,8 @@ require(["jquery", "nav"], function($){
         }
 
         $cateLi.on("click", function(){
-            Category_switch($(this).data("id"));
+            console.log($(this).data("id")||0);
+            Category_switch($(this).data("id")||0);
 
 
             //$(this).addClass("current").siblings().removeClass("current");
@@ -75,12 +78,12 @@ require(["jquery", "nav"], function($){
 
         });
 
-        $(".blog-list-wrapper").on("click", $(".blog-cate"), function(e){
-            var cateId = $(e.target).data("id");
-            console.log(cateId);
-            Category_switch(cateId);
-            //Category_switch($(this).data("id"));
-        });
+        //$(".blog-list-wrapper").on("click", $(".blog-cate"), function(e){
+        //    var cateId = $(e.target).data("id");
+        //    console.log(cateId);
+        //    Category_switch(cateId);
+        //    //Category_switch($(this).data("id"));
+        //});
 
         $("#blog-list-load-btn").on("click", function(){
             offset++;
@@ -104,7 +107,9 @@ require(["jquery", "nav"], function($){
                             //<p class="blog-list-describe line">`+ blog.blog_date +`March 01, 2015 with 1 Commnets</p>
                             //<p class="blog-list-abstract">`+ blog.blog_content +`</p>
                             //<a href="blog_detail/view_blog?blogId=`+ blog.blog_id +`" class="blog-list-readmore">READ MORE</a>
-                            <a href="javascript:;" data-id="` + blog.cate_id + `"  class="blog-cate">`+ blog.cate_name +`</a>
+                            <a href="blog_list/get_blog_list?cate_id=` + blog.cate_id + `" class="blog-cate">`+ blog.cate_name +`</a>
+
+                            <!--<a href="javascript:;" data-id="` + blog.cate_id + `"  class="blog-cate">`+ blog.cate_name +`</a>-->
                             <p class="blog-list-title"><h4>`+ blog.blog_title +`</h4></p>
                             <p class="blog-list-describe line">`+ blog.blog_date +`March 01, 2015 with 1 Commnets</p>
                             <p class="blog-list-abstract">`+ blog.blog_content +`</p>

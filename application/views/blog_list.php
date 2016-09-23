@@ -40,10 +40,10 @@
 
     <div class="catalog">
         <ul class="clearfix">
-            <li class="current">All</li>
+            <li class="<?php if(!$cate) echo "current"?>">All</li>
             <?php foreach($categories as $category){
                 ?>
-            <li data-id="<?php echo $category->cate_id?>"><?php echo $category->cate_name?></li>
+            <li class="<?php if($cate) echo "current"?>" data-id="<?php echo $category->cate_id?>"><?php echo $category->cate_name?></li>
 
                 <?php
             }
@@ -60,7 +60,8 @@
                     <div id="blog-list-container">
                         <img src="<?php echo $blog->blog_thumb;?>" alt="">
                         <div id="blog-list-info">
-                            <a href="javascript:;" data-id="<?php echo $blog->cate_id;?>" class="blog-cate"><?php echo $blog->cate_name;?></a>
+                            <a href="blog_list/get_blog_list?cate_id=<?php echo $blog->cate_id;?>" class="blog-cate"><?php echo $blog->cate_name;?></a>
+<!--                            <a href="javascript:;" data-id="--><?php //echo $blog->cate_id;?><!--" class="blog-cate">--><?php //echo $blog->cate_name;?><!--</a>-->
                             <p class="blog-list-title"><h4><?php echo $blog->blog_title;?></h4></p>
                             <p class="blog-list-describe line"><?php echo $blog->blog_date;?>March 01, 2015 with 1 Commnets</p>
                             <p class="blog-list-abstract"><?php echo $blog->blog_content;?></p>
