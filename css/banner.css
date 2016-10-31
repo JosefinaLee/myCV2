@@ -8,50 +8,72 @@
 		/*background-size: 100%;*/
 		/*padding-top: 71.4%;*/
 		background-attachment: fixed;
-		position: relative;
 	}
+	#banner .wrapper{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		display: flex;
+        height: 100%;
+        justify-content:center;
+        align-items: center;
+        color: #fff;
+    }
+	#banner .banner-thumb, .banner-content, .banner-contact{
+        /*width: 33%;*/
+        display: flex;
+        flex-direction: column;
+        /*align-content:center;*/
+        justify-content:center;
+        align-items: center;
+    }
+    #banner .banner-thumb img{
+        width: 7rem;
+        height: 7rem;
+    }
+    #banner .banner-content {
+        text-align: center;
+        color: #fff;
+        right: 8rem;
+        top: 5rem;
+    }
 
-	#banner .banner-content {
-
-		text-align: center;
-		color: #fff;
-		position: absolute;
-		right: 8rem;
-		top: 5rem;
-	}
-
-	#banner .banner-content p {
-		/*margin: 2rem 0;*/
-	}
-
-	#banner .banner-content h1 {
+	#banner h1 {
 		letter-spacing: 2px;
-		font-family: 'Cinzel', serif;
-		font-size: 2.2rem;
-		font-weight: 600;
-		color: #eee;
-		margin-bottom: 2.3rem;
-		/*margin: 20px 0;*/
+		margin: 0.5rem;
 	}
+    #banner h2{
+        letter-spacing: 2px;
+        margin: 0.5rem;
+        font-family: "ESPRB";
 
-	#banner .banner-content span {
-		letter-spacing: 2px;
-		font-family: 'Cinzel', serif;
-		font-size: 1.6rem;
-		font-weight: 200;
-		color: #fff;
-		/*color: #D0C8C8;*/
-		line-height: 2rem;
-		padding: 0.5rem;
-		border-top: 2px solid #FFF;
-		border-bottom: 2px solid #FFF;
+    }
+    #banner .banner-contact p{
+        font-family: "AppleChancery";
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
 
-	}
 
 /*Banner end//////////*/
 
+@media (min-width: 768px){
+    #banner .banner-thumb, .banner-content, .banner-contact{
+        width: 33%;
+    }
+}
 
-
+@media (min-width: 400px) and (max-width: 767px){
+    #banner .wrapper{
+        display: block;
+        display: inline-block;
+        verticle-align: middle;
+    }
+    #banner .banner-thumb, .banner-content, .banner-contact{
+        width: 49%;
+        float: left;
+    }
+}
 
 
 
